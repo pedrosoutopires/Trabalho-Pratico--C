@@ -1,0 +1,57 @@
+1. OBJETIVO
+Desenvolver um programa na linguagem C que funcione como um sistema de cadastro
+e gerenciamento de funcionários (Agenda). O programa deve permitir armazenar
+dados de até 10 funcionários e oferecer um menu de operações para o usuário.
+
+2. REQUISITOS DE ESTRUTURA DE DADOS (OBRIGATÓRIO)
+Para exercitar o conceito de matrizes e vetores paralelos, as estruturas de
+dados devem ser declaradas OBRIGATORIAMENTE dentro da função main().
+Não é permitido o uso de 'structs' ou variáveis globais.
+
+As variáveis devem seguir as seguintes especificações:
+- Nome: Matriz de caracteres (char) com dimensões [10][50] (10 nomes de até 49 letras).
+- E-mail: Matriz de caracteres (char) com dimensões [10][30] (10 e-mails de até 29 letras).
+- Salário: Vetor de números de ponto flutuante (float) com tamanho [10].
+
+--------------------------------------------------------------------------------
+3. INTERFACE E MENU DE OPÇÕES
+O programa deverá exibir um menu interativo (utilizando uma estrutura de
+repetição como do-while) com as seguintes opções. Cada opção deve,
+obrigatoriamente, chamar uma função específica passando as matrizes e vetores
+como parâmetros.
+
+Menu de Opções:
+1. Cadastrar Novo Funcionário
+2. Mostrar Todos os Dados
+3. Buscar Dados de uma Pessoa Específica
+4. Mostrar Maior Salário
+5. Mostrar Média Salarial
+6. Sair
+
+--------------------------------------------------------------------------------
+4. ESPECIFICAÇÃO DETALHADA DAS FUNÇÕES
+
+Opção 1: Cadastrar Novo Funcionário
+- A função deve permitir cadastrar um funcionário por vez.
+- Deve-se controlar o índice atual de cadastros (limite máximo de 10).
+- Se a agenda estiver cheia, exibir uma mensagem de aviso.
+
+Opção 2: Mostrar Todos os Dados
+- A função deve listar na tela todos os funcionários cadastrados até o momento,
+  mostrando de forma organizada: Índice, Nome, E-mail e Salário.
+
+Opção 3: Buscar Dados de uma Pessoa Específica
+- A função deve solicitar ao usuário o nome completo.
+- Deve realizar uma busca na matriz de Nomes (utilizando funções como strcmp da biblioteca <string.h>).
+- Se encontrar, exibir todos os dados dessa pessoa. Se não encontrar, informar.
+
+Opção 4: Mostrar Maior Salário
+- A função deve percorrer o vetor de salários, identificar o maior valor
+  cadastrado e exibir na tela o Nome e o Salário da pessoa que o recebe.
+
+Opção 5: Mostrar Média Salarial
+- A função deve calcular a média aritmética de todos os salários cadastrados
+  até o momento e exibir o resultado formatado na tela.
+
+Opção 6: Sair
+- Encerra a execução do programa de forma limpa.
